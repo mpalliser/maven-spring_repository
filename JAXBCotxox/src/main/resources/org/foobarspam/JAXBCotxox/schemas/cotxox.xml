@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<emt:carrera xmlns:emt="https://api.mobipalma.mobi/docs/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://api.mobipalma.mobi/docs/ cotxox.xsd">
+	<tarjetaCredito>Mastercard</tarjetaCredito>
+	<destino>destino</destino>
+	<origen>origen</origen>
+	<distancia>15.5</distancia>
+	<conductor>
+		<nombre>Pepe</nombre>
+		<matricula>433214JR</matricula>
+		<modelo>micra</modelo>
+		<mediaValoracion>4</mediaValoracion>
+		<valoraciones>3</valoraciones>
+		<ocupado>false</ocupado>
+	</conductor>
+	<costeTotal>50</costeTotal>
+	<propina>5</propina>
+</emt:carrera>
