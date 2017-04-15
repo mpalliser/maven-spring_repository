@@ -28,7 +28,12 @@ public class App {
 			System.out.println("Distancia del recorrido: " + objetoCarrera.getValue().getDistancia()+ "km");
 			System.out.println("Coste total: " + objetoCarrera.getValue().getCosteTotal() + "€");
 			System.out.println("Propina: " + objetoCarrera.getValue().getPropina() + "€");
-
+			System.out.println("Conductor asignado: " + objetoCarrera.getValue().getConductor().getNombre());
+			System.out.println("media valoracion: " + objetoCarrera.getValue().getConductor().getMediaValoracion());
+			System.out.println("modelo de coche: " + objetoCarrera.getValue().getConductor().getModelo());
+			System.out.println("matricula: " + objetoCarrera.getValue().getConductor().getMatricula());
+			
+			
 			System.out.println("Objeto en memoria marshalled a XML: ");
 			Marshaller m = jc.createMarshaller(); 			
 			m.marshal( objetoCarrera, System.out );

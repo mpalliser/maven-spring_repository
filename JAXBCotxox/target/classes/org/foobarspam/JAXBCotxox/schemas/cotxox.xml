@@ -2,9 +2,9 @@
 <emt:carrera xmlns:emt="https://api.mobipalma.mobi/docs/"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="https://api.mobipalma.mobi/docs/ cotxox.xsd">
-	<tarjetaCredito>Mastercard</tarjetaCredito>
-	<destino>destino</destino>
-	<origen>origen</origen>
+	<tarjetaCredito>Mastercard, 44343564434343423</tarjetaCredito>
+	<destino>Andratx</destino>
+	<origen>Palma</origen>
 	<distancia>15.5</distancia>
 	<conductor>
 		<nombre>Pepe</nombre>
