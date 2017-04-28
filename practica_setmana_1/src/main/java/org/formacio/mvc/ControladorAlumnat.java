@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * Created by mariano.palliser on 28/04/2017.
  */
+//@RestController			<-- hace la misma funcion que @Controller + @ResponseBody.
 @Controller
 public class ControladorAlumnat {
 
