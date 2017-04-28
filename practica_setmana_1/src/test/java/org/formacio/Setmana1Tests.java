@@ -51,7 +51,7 @@ public class Setmana1Tests {
 	/**
 	 * Implementau el metode ServeiAlumnat.matricula(id, nom), tal com trobareu alla especificat
 	 */
-	/*@Test
+	@Test
 	public void test_matricula() {
 
 		boolean insertaNull = servei.matricula(4, null);
@@ -63,18 +63,18 @@ public class Setmana1Tests {
 		assertTrue("Na Laura se pot matricular",insertaNoNull);
 		assertEquals("Laura", repositori.obteAlumne(4));
 
-	}*/
+	}
 
 	/**
 	 * Modifiqueu la classe ServeiAlumnat per a que, just crear-se, inserti dos alumnes al repositori:
 	 * id = 1, nom = Antonia
 	 * id = 2, nom = Joan
 	 */
-	/*@Test
+	@Test
 	public void test_creacio_dades_inicials() {
 		assertEquals("Antonia", repositori.obteAlumne(1));
 		assertEquals("Joan", repositori.obteAlumne(2));
-	}*/
+	}
 
 
 	/**
