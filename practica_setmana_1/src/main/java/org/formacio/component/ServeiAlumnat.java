@@ -17,8 +17,10 @@ public class ServeiAlumnat {
 
 	@PostConstruct
 	private void insetarAlumnes() {
+
 		bbdd.altaAlumne(1, "Antonia");
 		bbdd.altaAlumne(2, "Joan");
+
 	}
 
 	public boolean matricula (int id, String alumne) {
@@ -29,6 +31,13 @@ public class ServeiAlumnat {
 		} else {
 			return false;
 		}
+
+	}
+
+	public int alumnesRegistrats() {
+
+		return bbdd.llistaAlumnes().size();
+
 	}
 
 }

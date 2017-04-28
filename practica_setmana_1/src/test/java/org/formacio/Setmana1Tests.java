@@ -87,7 +87,7 @@ public class Setmana1Tests {
 	 * pista: si el controlador ha de coneixer el numero d'alumnes i nomes pot emprar ServeiAlumnat ...
 	 *  ... pot ser ServeiAlumnat necessitara un altre metode.
 	 */
-	/*@Test
+	@Test
 	public void test_web_nombre_alumnes() throws Exception {
 		int nombreAlumnes = repositori.llistaAlumnes().size();
 
@@ -102,5 +102,5 @@ public class Setmana1Tests {
 
 	}
 
-*/
+
 }
