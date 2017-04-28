@@ -43,10 +43,10 @@ public class Setmana1Tests {
 	/**
 	 * Modifiqueu la classe ServeiAlumnat per a que sigui un compoment detectat per Spring
 	 */
-	/*@Test
+	@Test
 	public void test_servei_component() {
 		assertNotNull("ServeiAlumnat es un component", servei);
-	}*/
+	}
 
 	/**
 	 * Implementau el metode ServeiAlumnat.matricula(id, nom), tal com trobareu alla especificat
