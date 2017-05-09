@@ -19,7 +19,7 @@ public class Regulator implements Regulate{
 	private RegulatorDisplayCodes code;
 	
 	@Inject
-	public Regulator(Thermometer t,@Force Heater h) {
+	public Regulator(Thermometer t, @Force Heater h) {
 		this.t = t;
 		this.h = h;
 	}
@@ -29,6 +29,7 @@ public class Regulator implements Regulate{
 		return temperature;
 	}
 
+	@Inject
 	public void setTemperature(RoomTemperature temperature) {
 		this.temperature = temperature;
 	}
@@ -46,7 +47,6 @@ public class Regulator implements Regulate{
 	}
 	
 	public void regulate(){
-			RegulatorDisplayCodes code;
 			while(t.read(temperature) < maxTemp){
 				code = RegulatorDisplayCodes.HEATING;				
 				h.engage(temperature);
