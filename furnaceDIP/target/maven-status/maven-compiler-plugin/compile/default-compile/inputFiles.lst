@@ -1,0 +1,9 @@
+/home/david/workspace_neon/furnaceDIP/src/main/java/org/foobarspam/furnaceDIP/hardware/GasHeater.java
+/home/david/workspace_neon/furnaceDIP/src/main/java/org/foobarspam/furnaceDIP/types/RoomTemperature.java
+/home/david/workspace_neon/furnaceDIP/src/main/java/org/foobarspam/furnaceDIP/interfaces/Thermometer.java
+/home/david/workspace_neon/furnaceDIP/src/main/java/org/foobarspam/furnaceDIP/hardware/RemoteCommandSensor.java
+/home/david/workspace_neon/furnaceDIP/src/main/java/org/foobarspam/furnaceDIP/types/RegulatorDisplayCodes.java
+/home/david/workspace_neon/furnaceDIP/src/main/java/org/foobarspam/furnaceDIP/hardware/Regulator.java
+/home/david/workspace_neon/furnaceDIP/src/main/java/org/foobarspam/furnaceDIP/otherstuff/Jedi.java
+/home/david/workspace_neon/furnaceDIP/src/main/java/org/foobarspam/furnaceDIP/interfaces/Heater.java
+/home/david/workspace_neon/furnaceDIP/src/main/java/org/foobarspam/furnaceDIP/Main/App.java

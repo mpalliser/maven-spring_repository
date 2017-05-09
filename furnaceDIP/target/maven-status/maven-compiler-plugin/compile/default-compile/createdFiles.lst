@@ -1,0 +1,10 @@
+org/foobarspam/furnaceDIP/types/RegulatorDisplayCodes.class
+org/foobarspam/furnaceDIP/Main/App.class
+org/foobarspam/furnaceDIP/hardware/GasHeater.class
+org/foobarspam/furnaceDIP/otherstuff/Jedi.class
+org/foobarspam/furnaceDIP/interfaces/Heater.class
+org/foobarspam/furnaceDIP/types/RoomTemperature.class
+org/foobarspam/furnaceDIP/hardware/Regulator$1.class
+org/foobarspam/furnaceDIP/hardware/RemoteCommandSensor.class
+org/foobarspam/furnaceDIP/hardware/Regulator.class
+org/foobarspam/furnaceDIP/interfaces/Thermometer.class
