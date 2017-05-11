@@ -10,3 +10,5 @@ Consiste en la creación de una clase carrera en un xml y un xsd que la valida, 
 Applicación que realiza el típico "Hello World", lanza una petición GET del cliente al servidor y recibe un string. (primera practica con Spring)
 * practica_setmana_1:
 Primera práctica utilizando springboot, la cual crea un repositorio de alumnos e inyecta dos alumnos utilizando @PostConstructor, todo ello con sus casos test correspondientes.
+* FurnaceDIP
+Práctica en la cual se realiza el Furnace Kata implementando google guice para utilizar interfaces y las clases que las implementan.
