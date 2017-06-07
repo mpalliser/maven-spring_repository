@@ -56,7 +56,6 @@ public class Item implements Componible,Iterable {
 			hijos.add(new Item(hijo));
 		}
 
-		iterable();
 	}
 
 	public void composite(Item[] newHijos) {
@@ -64,7 +63,6 @@ public class Item implements Componible,Iterable {
 			hijos.add(hijo);
 		}
 
-		iterable();
 	}
 
 	public void iterable() {
@@ -91,6 +89,7 @@ public class Item implements Componible,Iterable {
 		for (Item hijo : hijos) {
 			if (hijo.getNombre().equals(nombre)) {
 				hijos.remove(hijo);
+				break;
 			}
 		}
 	}

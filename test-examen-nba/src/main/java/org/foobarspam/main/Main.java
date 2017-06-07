@@ -4,6 +4,8 @@ import org.foobarspam.item.CompuestoItem;
 import org.foobarspam.item.Item;
 import org.foobarspam.item.SimpleItem;
 
+import java.awt.*;
+
 /**
  * Created by mariano.palliser on 06/06/2017.
  */
@@ -35,11 +37,12 @@ public class Main {
 
 		System.out.println("\n ***añadir varios hijos desde array de strings y recorrer un item compuesto mostrando su nombre y el de sus hijos: n hijos, profundidad 1 *** \n");
 
+		String[] equiposAtlantic = {"Celtics", "Nets", "Knicks", "76ers", "Raptors"};
 		Item atlantic = new CompuestoItem("Atlantic");
 		atlantic.setCompuesto(true);
-
-		String[] equiposAtlantic = {"Celtics", "Nets", "Knicks", "76ers", "Raptors"};
 		atlantic.composite(equiposAtlantic);
+
+		atlantic.iterable();
 
 		System.out.println("\n *** recorrer un item compuesto por otros compuestos, mostrando su nombre y el de sus hijos: n hijos, profundidad n *** \n");
 
@@ -49,8 +52,8 @@ public class Main {
 		Item este = new CompuestoItem("Este");
 		este.setCompuesto(true);
 
-		nba.anhadir(este);
 		este.anhadir(atlantic);
+		nba.anhadir(este);
 
 		nba.iterable();
 
@@ -62,6 +65,8 @@ public class Main {
 
 		central.composite(equiposCentral);
 
+		central.iterable();
+
 		System.out.println("\n *** crear un elemento compuesto de elementos compuestos a partir de un array de objetos simples *** \n");
 
 		String[] equiposSouthEast = {"Heat", "Hawks", "Hornets", "Wizzards", "Magic"};
@@ -70,16 +75,51 @@ public class Main {
 
 		southEast.composite(equiposSouthEast);
 
+		southEast.iterable();
+
 		System.out.println("\n *** crear un elemento compuesto de elementos compuestos a partir de un array de objetos compuestos *** \n");
 
 		Item[] divisiones = {central, southEast};
 
 		este.composite(divisiones);
 
+		este.iterable();
+
 		System.out.println("\n *** eliminar un hijo a profundidad n *** \n");
 
 		este.quitar("Atlantic");
 		este.iterable();
+
+		System.out.println("\n *** Liga NBA completa con sus conferencias, divisiones y equipos *** \n");
+
+		Item oeste = new CompuestoItem("Oeste");
+		oeste.setCompuesto(true);
+
+		String[] equiposNoroeste = {"Denver", "Minnesota", "Oklahoma", "Portland", "Utah"};
+		Item noroeste = new CompuestoItem("Noroeste");
+		noroeste.setCompuesto(true);
+		noroeste.composite(equiposNoroeste);
+
+		String[] equiposSuroeste = {"Dallas", "Houston", "Memphis", "Pelicans", "Spurs"};
+		Item suroeste = new CompuestoItem("Suroeste");
+		suroeste.setCompuesto(true);
+		suroeste.composite(equiposSuroeste);
+
+		String[] equiposPacifico = {"Warriors", "Clippers", "Lakers", "Suns", "Kings"};
+		Item pacifico = new CompuestoItem("Pacifico");
+		pacifico.setCompuesto(true);
+		pacifico.composite(equiposPacifico);
+
+		Item[] oesteEquipos = {noroeste, suroeste, pacifico};
+		oeste.composite(oesteEquipos);
+
+		nba.anhadir(oeste);
+
+		nba.iterable();
+
+
+
+
 
 
 	}
